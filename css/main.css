@@ -1,0 +1,116 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Elementos header*/
+header h1{
+    margin-left: 10px;
+    color: #E50914;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+/*Elementos main*/
+
+.livro-principal{
+    font-size: 18px;
+    background:linear-gradient(rgba(0, 0, 0,.50), rgba(0, 0, 0, .50)100%), url('img/a-batalha-do-apocalipse.jpg');
+    height: 400px;
+    background-size:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:orange;
+    text-shadow: 5px #999;
+}
+
+.livro-principal-container{
+    width: 70%;
+    margin-left: 10px;
+    overflow-y: hidden;
+}
+
+.descricao{
+    margin: 10px 0;
+}
+
+.titulo{
+    font-size: 40px;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 14px;
+    margin: 30px 15px;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.botao:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.carousel-titulo{
+    margin: 30px 10px;
+}
+
+.carousel{
+    width: 100vw;
+}
+
+.carousel .items{
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 60px;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel .items .item{
+    flex: none;
+    width: 20%;
+    height: 300px;
+    overflow-y: hidden;
+    margin-right: 5px;
+    scroll-snap-align: start;
+}
+
+.carousel .items .item img{
+    width: 95%;
+    height: 100%;
+}
